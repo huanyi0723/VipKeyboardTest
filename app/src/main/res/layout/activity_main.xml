@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f4f5"
+    tools:context="com.example.yi17zhang.vipkeyboardtest.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/writebankcard_mobilebar"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/mobileText"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="身份证"
+            android:textColor="#585c64"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/writebankcard_mobileedit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="60dp"
+            android:layout_toRightOf="@id/mobileText"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#222222"
+            android:textColorHint="#cccccc"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <com.example.yi17zhang.vipkeyboardtest.MyKeyboardView
+        android:id="@+id/customKeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#e6e6e6"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/bg_keyboard_btn"
+        android:keyTextColor="#000000"
+        android:keyTextSize="31dp"
+        android:labelTextSize="23.04sp"
+        android:shadowRadius="0" />
+
+</RelativeLayout>
